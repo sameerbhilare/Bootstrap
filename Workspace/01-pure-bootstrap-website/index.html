@@ -18,6 +18,53 @@
   </head>
   <body>
 
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <!-- brand logo -->
+        <a href="#" class="navbar-brand"><i class="fas fa-child fa-2x text-warning"></i></a>
+
+        <!-- data-toggle="collapse" => to toggle navbar and form on click
+            'data-target' - connect button and collapsable content via "id" property-->
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- 'navbar-collapse' is connected to above 'navbar-expand-*' class to properly show/hide the navbar.
+              'justify-content-between' to have space between navigation and the searchbox -->
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Skills</a></li>
+
+                <!-- show dropdown for sub-menu -->
+                <li class="nav-item dropdown">
+                    <!-- dropdown-toggle to show little down arrow
+                        data-toggle="dropdown" to toggle dropdown-menu on click  -->
+                    <a class="nav-link text-light text-uppercase font-weight-bold px-3 dropdown-toggle" href="#" data-toggle="dropdown">Projects</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <a class="dropdown-item" href="#">Project 3</a>
+                        <a class="dropdown-item" href="#">Project 4</a>
+                    </divclass>
+                </li>
+                <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Team</a></li>
+                <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="#">Contact</a></li>
+            </ul>
+
+            <!-- search bar -->
+            <!-- form-inline => sets flex -->
+            <form class="form-inline ml-3">
+                <div class="input-group">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <div class="input-group-append">
+                        <button type="button" class="btn"><i class="fas fa-search text-muted"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
