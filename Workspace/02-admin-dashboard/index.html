@@ -12,6 +12,40 @@
   </head>
   <body>
     
+    <!-- ========================================================================================== -->
+    <!-- Navbar -->
+    <!-- navbar-expand-md => to collapse navbar as soon as screensize is smaller than md
+         navbar-light => to display navbar toggler icon -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <!-- data-toggle and data-target are used by JS for toggling the navbar on button click
+           ml-auto to shift the menu button to the right -->
+      <button class="mb-2 ml-auto navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#mynavbar">
+        <!-- to show hamburger icon -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- sidebar -->
+            <!-- fixed-top => to avoid default navbar paddings/margins -->
+            <div class="col-lg-3 sidebar fixed-top">
+              <a href="#" class="py-3 mx-auto mb-4 text-center text-white navbar-brand d-block bottom-border">Admin Dashboard</a>
+              <div class="pb-3 bottom-border">
+                <img src="./images/admin.jpeg" alt="Admin" width="50" class="mr-3 rounded-circle">
+                <a href="" class="text-white">Halen Smith</a>
+              </div>
+            </div>
+
+            <!-- top nav -->
+            <div class="col-lg-3"></div>
+
+            <!-- for rest of the row -->
+            <div class="col-lg-9"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
   
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
