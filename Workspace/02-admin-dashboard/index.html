@@ -239,8 +239,8 @@
       <div class="container-fluid">
         <div class="mb-5 row">
           <div class="ml-auto col-xl-10 col-lg-9 col-md-8">
-            <div class="row">
-              <div class="col-12">
+            <div class="row align-items-center">
+              <div class="mb-4 col-12 col-xl-6 mb-xl-0">
                 <h3 class="mb-3 text-center text-muted">Staff Salary</h3>
                 <table class="table text-center table-striped bg-light">
                   <thead>
@@ -338,7 +338,106 @@
                 </nav>
               </div>
 
-              <div class="col-12"></div>
+              <div class="col-12 col-xl-6">
+                <div class="col-12">
+                  <h3 class="mb-3 text-center text-muted">Recent Payments</h3>
+                  <table class="table text-center table-hover table-dark">
+                    <thead>
+                      <tr class="text-muted">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>1</th>
+                        <td>John</td>
+                        <td>$2000</td>
+                        <td>25.05.2021</td>
+                        <td>
+                          <!-- using bootstrap badge class -->
+                          <span class="py-2 badge badge-success w-75">Approved</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>2</th>
+                        <td>Apurva</td>
+                        <td>$2000</td>
+                        <td>25.05.2021</td>
+                        <td>
+                          <!-- using bootstrap badge class -->
+                          <span class="py-2 badge badge-success w-75">Approved</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>3</th>
+                        <td>Indra</td>
+                        <td>$2000</td>
+                        <td>25.05.2021</td>
+                        <td>
+                          <!-- using bootstrap badge class -->
+                          <span class="py-2 badge badge-danger w-75">Pending</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>4</th>
+                        <td>Nilima</td>
+                        <td>$2000</td>
+                        <td>25.05.2021</td>
+                        <td>
+                          <!-- using bootstrap badge class -->
+                          <span class="py-2 badge badge-danger w-75">Pending</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>5</th>
+                        <td>Sameer</td>
+                        <td>$2000</td>
+                        <td>25.05.2021</td>
+                        <td>
+                          <!-- using bootstrap badge class -->
+                          <span class="py-2 badge badge-success w-75">Approved</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- pagination -->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="px-3 py-2 page-link">
+                        <span>Previous</span>
+                      </a>
+                    </li>
+                    <!-- active - to show currently active page -->
+                    <li class="page-item active">
+                      <a href="#" class="px-3 py-2 page-link">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="px-3 py-2 page-link">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="px-3 py-2 page-link">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="px-3 py-2 page-link">
+                        <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
