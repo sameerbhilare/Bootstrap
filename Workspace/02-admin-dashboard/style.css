@@ -104,3 +104,10 @@ body {
 }
 
 /* end of Card */
+
+/* Task list section */
+.task-border {
+  border-left: 3px solid #f66436; /* to show nice little border on the left side of the task */
+}
+
+/* end of Card */
