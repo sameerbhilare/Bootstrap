@@ -289,6 +289,91 @@
     </div>
   </section>
 
+  
+  <!-- =================================================================================================== -->
+  <!-- Customers section -->
+  <section class="p-5 customers">
+    <div class="container-fluid">
+      <!-- Title -->
+      <div class="text-center text-white row">
+        <div class="m-4 col">
+          <h1 class="mb-4 display-4">Happy Customers</h1>
+          <div class="mb-4 underline"></div>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laudantium aut soluta necessitatibus, aspernatur deserunt ratione ut alias quia. 
+            Voluptate magnam est cupiditate numquam officia.</p>
+        </div>
+      </div>
+
+      <!-- customers / carousel -->
+      <div class="row">
+        <div class="mx-auto col-md-6">
+          <!-- carousel => for carousels
+               slide => for some transition effects
+               data-ride="carousel" => so that the slideshow will work automatically -->
+          <div class="carousel slide" data-ride="carousel" id="customer-carousel">
+            <!-- carousel-indicators => to show carousel indicators -->
+            <ol class="carousel-indicators">
+              <!-- number of <li> elements must match number of 'carousel-item's
+                   data-target => to manually change the slide by clicking on the controls
+                   data-slide-to => need to provide (0 based) index of the slide to be shown. -->
+              <li data-target="#customer-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#customer-carousel" data-slide-to="1"></li>
+              <li data-target="#customer-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <!-- current carousel-item must have a class 'active' in order for it to be visible -->
+              <div class="text-center carousel-item active">
+                <img src="./images/customer1.jpeg" alt="Customer 1" class="m-5 img-fluid rounded-circle" width="150px">
+                <blockquote class="text-white blockquote">
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores voluptatibus voluptatem dolor, soluta debitis consectetur ducimus nihil esse repudiandae!</p>
+                  <h5 class="mb-3 text-light text-uppercase font-weight-bold">Monika</h5>
+                  <ul class="mb-5 list-inline">
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                  </ul>
+                </blockquote>
+              </div>
+
+              <div class="text-center carousel-item">
+                <img src="./images/customer2.jpeg" alt="Customer 2" class="m-5 img-fluid rounded-circle" width="150px">
+                <blockquote class="text-white blockquote">
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores voluptatibus voluptatem dolor, soluta debitis consectetur ducimus nihil esse repudiandae!</p>
+                  <h5 class="mb-3 text-light text-uppercase font-weight-bold">John</h5>
+                  <ul class="mb-5 list-inline">
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                  </ul>
+                </blockquote>
+              </div>
+
+              <div class="text-center carousel-item">
+                <img src="./images/customer3.jpeg" alt="Customer 3" class="m-5 img-fluid rounded-circle" width="150px">
+                <blockquote class="text-white blockquote">
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores voluptatibus voluptatem dolor, soluta debitis consectetur ducimus nihil esse repudiandae!</p>
+                  <h5 class="mb-3 text-light text-uppercase font-weight-bold">Halen</h5>
+                  <ul class="mb-5 list-inline">
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                  </ul>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- using standard jQuery CDN link instead of slimmed version in order for the gallary filtering with effect works properly -->
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
