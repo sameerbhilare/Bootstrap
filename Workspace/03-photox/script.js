@@ -29,4 +29,29 @@ $(document).ready(function () {
       $('.mission-text').removeClass('fromRight');
     }
   });
+
+  // filter gallary images based on selected filter
+  $('.gallary-list-item').click(function () {
+    // get value of 'data-filter' attribute of gallary-list-item
+    let value = $(this).attr('data-filter');
+    if (value === 'all') {
+      $('.filter').show(300); // 300 ms
+    } else {
+      // filter out elements which does NOT have given class
+      $('.filter')
+        .not('.' + value)
+        .hide(300);
+
+      // show with matching class names
+      $('.filter')
+        .filter('.' + value)
+        .show();
+    }
+  });
+
+  // Add class 'active-item' to the currently selected list item
+  $('.gallary-list-item').click(function () {
+    // mark selected item as active and remove active class from other list-items
+    $(this).addClass('active-item').siblings().removeClass('active-item');
+  });
 });

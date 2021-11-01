@@ -164,3 +164,22 @@ header {
 }
 
 /* end of Collection */
+
+/* Gallary */
+
+.underline-dark {
+  width: 150px;
+  margin: auto; /* to center the line */
+  border: 3px solid #888;
+}
+
+.gallary-list-item {
+  color: #777;
+  cursor: pointer;
+  user-select: none; /* disable user selecting the item */
+}
+
+.active-item {
+  color: #70aed2;
+}
+/* end of Gallary */
