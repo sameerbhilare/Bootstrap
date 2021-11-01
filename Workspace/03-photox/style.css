@@ -139,3 +139,28 @@ header {
 }
 
 /* end of mission */
+
+/* Collection */
+
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+
+.heading {
+  position: absolute;
+  top: 70%; /* 70% from top */
+  right: 0; /* 0 from right */
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #222;
+  width: 70%; /* to break the word on small screen width */
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.heading:hover {
+  opacity: 1;
+}
+
+/* end of Collection */
