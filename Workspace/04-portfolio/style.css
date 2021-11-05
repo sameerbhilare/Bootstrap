@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.color-primary {
+  color: #007bff;
+  /* color: #007bff #70abd2; */
+}
+
+.header {
+  height: 100vh;
+  /* background: #fff; */
+}
+
+.brand {
+  color: #4070f4;
+  /* #007bff; */
+}
+
+/* navbar */
+.nav-menu {
+  padding: 30px;
+  transition: all 0.7s; /* to show transition of navbar on scroll. See .custom-navbar class and JS */
+}
+
+.menu-item {
+  letter-spacing: 1px;
+  transition: color 0.5s;
+  color: #000;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+.nav-active {
+  color: #007bff;
+}
+
+/* to show 3 line (hamburger) */
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s; /* to show nice animation effects for hamburger lines */
+}
+
+/* to show 'X' on click */
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.profile-img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
+}
