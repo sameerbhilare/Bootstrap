@@ -15,6 +15,6 @@ $(document).ready(function () {
   $('#logo').on('click', function () {
     console.log('clicked on logo');
     $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
-    $('a[href$="#home"]').addClass('nav-active');
+    $('a[href$="#banner"]').addClass('nav-active');
   });
 });

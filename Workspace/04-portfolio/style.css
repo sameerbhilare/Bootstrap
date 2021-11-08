@@ -34,7 +34,8 @@ body {
 }
 
 .nav-active {
-  color: #007bff;
+  /* color: #007bff; */
+  border-bottom: 5px solid #007bff;
 }
 
 /* to show 3 line (hamburger) */
@@ -67,4 +68,20 @@ body {
 }
 #img-profile:hover {
   transform: scale(1.02) perspective(2px);
+}
+
+.home-social * {
+  animation-name: socialMedia;
+  animation-duration: 1s;
+}
+
+@keyframes socialMedia {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
