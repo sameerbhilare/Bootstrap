@@ -20,12 +20,12 @@ body {
 /* navbar */
 .nav-menu {
   padding: 30px;
-  transition: all 0.7s; /* to show transition of navbar on scroll. See .custom-navbar class and JS */
+  /* transition: all 0.7s; to show transition of navbar on scroll. See .custom-navbar class and JS */
 }
 
 .menu-item {
   letter-spacing: 1px;
-  transition: color 0.5s;
+  transition: all 0.5s;
   color: #000;
 }
 
@@ -35,7 +35,7 @@ body {
 
 .nav-active {
   /* color: #007bff; */
-  border-bottom: 5px solid #007bff;
+  border-bottom: 4px solid #007bff;
 }
 
 /* to show 3 line (hamburger) */
@@ -59,11 +59,17 @@ body {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* specially added to show shadow for exact round and cutout (polygon) shape */
+.parent-wrapper {
+  filter: drop-shadow(0 15px 30px rgba(0, 123, 255, 0.5));
+}
+
 .img-wrapper {
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
+  position: relative;
 }
 
 #img-profile {
