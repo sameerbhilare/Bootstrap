@@ -79,7 +79,11 @@ body {
   transform: scale(1.05) perspective(2px);
 }
 
+.home-social {
+  margin-top: 4rem;
+}
 .home-social * {
+  font-size: 1.5rem;
   animation-name: socialMedia;
   animation-duration: 1.5s;
 }
