@@ -16,6 +16,14 @@ body {
   animation: fromTopHeader 1.5s ease;
 }
 
+#logo {
+  max-height: 59px;
+}
+
+section {
+  padding-top: 59px;
+}
+
 @keyframes fromTopHeader {
   0% {
     transform: translateY(-90px);
