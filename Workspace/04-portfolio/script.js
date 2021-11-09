@@ -21,7 +21,7 @@ $(document).ready(function () {
   // window scroll event - to animate banner
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    console.log(position);
+    // console.log(position);
     if (position <= 350) {
       $('.header').css('opacity', '1'); // when user scrolls up
       $('.header').addClass('fromTopHeader');
