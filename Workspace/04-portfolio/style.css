@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth;
+  /* commenting scroll-behavior: smooth so that animations have proper effect based on scroll position */
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 
 .header {
   height: 100vh;
-  animation: fromTopHeader 1.5s ease;
 }
 
 #logo {
@@ -22,6 +22,11 @@ body {
 
 section {
   padding-top: 59px;
+}
+
+/* animation on scroll when we reach the mission part of the mission section */
+.fromTopHeader {
+  animation: fromTopHeader 1.5s ease;
 }
 
 @keyframes fromTopHeader {
@@ -48,7 +53,7 @@ section {
 
 .menu-item {
   letter-spacing: 1px;
-  transition: all 0.5s;
+  transition: all 0.2s;
   color: #000;
 }
 
@@ -107,8 +112,17 @@ section {
 }
 .home-social * {
   font-size: 1.5rem;
+  /* same as .fromTopHeader class because it is required when page loaded for first time as there is no scrolling yet */
   animation-name: socialMedia;
-  animation-duration: 1.5s;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+
+/* animation on scroll when we reach the mission part of the mission section */
+.socialMedia {
+  animation-name: socialMedia;
+  animation-duration: 1.2s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
