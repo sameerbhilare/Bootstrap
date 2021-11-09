@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -9,7 +13,18 @@ body {
 
 .header {
   height: 100vh;
-  /* background: #fff; */
+  animation: fromTopHeader 1.5s ease;
+}
+
+@keyframes fromTopHeader {
+  0% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .brand {
@@ -86,6 +101,8 @@ body {
   font-size: 1.5rem;
   animation-name: socialMedia;
   animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 
 @keyframes socialMedia {
