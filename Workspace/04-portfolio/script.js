@@ -72,7 +72,7 @@ $(document).ready(function () {
   // window scroll event - to animate skills title
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    console.log(position);
+    //console.log(position);
     if (position > 1100 && position < 1600) {
       $('.skills-title').css('opacity', '1'); // when user scrolls up
       $('.skills-title').addClass('sectionTitleAnimation');
@@ -85,7 +85,7 @@ $(document).ready(function () {
   // window scroll event - to animate frontend skills
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    console.log(position);
+    //console.log(position);
     if (position > 1100 && position < 2800) {
       $('.frontend-progress').css('opacity', '1'); // when user scrolls up
       $('.frontend-progress').addClass('fromLeft');
