@@ -6,14 +6,12 @@ $(document).ready(function () {
 
   // set currently clicked menu item as active
   $('.navbar-nav a').on('click', function () {
-    console.log('clicked on nav');
     $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
     $(this).addClass('nav-active');
   });
 
   // set home menu item as active when clicked on logo
   $('#logo').on('click', function () {
-    console.log('clicked on logo');
     $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
     $('a[href$="#banner"]').addClass('nav-active');
   });
@@ -39,14 +37,16 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     // console.log(position);
-    if (position > 350) {
+    if (position > 350 && position < 1300) {
       // about
       $('.about-title').css('opacity', '1'); // when user scrolls up
       $('.about-title').addClass('sectionTitleAnimation');
+      // console.log('added sectionTitleAnimation');
     } else {
       // about
       $('.about-title').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
       $('.about-title').removeClass('sectionTitleAnimation');
+      // console.log('removed sectionTitleAnimation');
     }
   });
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     // console.log(position);
-    if (position > 350) {
+    if (position > 350 && position < 1300) {
       $('.about-img').css('opacity', '1'); // when user scrolls up
       $('.about-img').addClass('fromLeft');
 
