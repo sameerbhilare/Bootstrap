@@ -74,6 +74,7 @@ body {
 
 section {
   padding-top: 59px;
+  height: 100vh;
 }
 
 /* animation on scroll when we reach the mission part of the mission section */
