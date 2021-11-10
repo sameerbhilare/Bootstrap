@@ -74,7 +74,7 @@ body {
 
 section {
   padding-top: 59px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* animation on scroll when we reach the mission part of the mission section */
@@ -94,8 +94,7 @@ section {
 }
 
 .brand {
-  color: #4070f4;
-  /* #007bff; */
+  color: #007bff;
 }
 
 /* navbar */
@@ -228,4 +227,25 @@ mark {
   width: 150px;
   margin: auto; /* to center the line */
   border-bottom: 5px solid #007bff;
+}
+
+/* ============================================================================ */
+/* Skills */
+
+.skill {
+  box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.skill_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill_bar {
+  padding-top: 10px;
+  border-bottom: 4px solid #007bff;
 }
