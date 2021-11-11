@@ -10,6 +10,19 @@ $(document).ready(function () {
     $(this).addClass('nav-active');
   });
 
+  // window scroll event - show border bottom
+  $(window).scroll(function () {
+    let position = $(this).scrollTop(); // calculates position in px when we scroll down
+    console.log(position);
+    if (position > 450) {
+      // add custom-navbar class when scroll position is >= 200
+      $('.nav-menu').addClass('custom-navbar');
+    } else {
+      // remove custom-navbar class when scroll position is < 200
+      $('.nav-menu').removeClass('custom-navbar');
+    }
+  });
+
   // set home menu item as active when clicked on logo
   $('#logo').on('click', function () {
     $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');

@@ -64,6 +64,19 @@ body {
 /* ============================================================================ */
 /* Banner */
 
+/* change based on scroll */
+.custom-navbar {
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 0 0 2px #eee;
+}
+/* do not show nav border for < md devices */
+@media (max-width: 991px) {
+  .custom-navbar {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
 .banner-section {
   height: 100vh;
 }
