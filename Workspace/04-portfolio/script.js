@@ -129,7 +129,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 2500 && position < 4000) {
+    if (position > 2500 && position < 4600) {
       $('.timeline-title').css('opacity', '1'); // when user scrolls up
       $('.timeline-title').addClass('sectionTitleAnimation');
 
