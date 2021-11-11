@@ -86,7 +86,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1100 && position < 2800) {
+    if (position > 1100 && position < 3500) {
       $('.frontend-progress').css('opacity', '1'); // when user scrolls up
       $('.frontend-progress').addClass('fromLeft');
 
