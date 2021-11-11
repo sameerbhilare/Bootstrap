@@ -124,4 +124,10 @@ $(document).ready(function () {
       $('.other-description').removeClass('fromRight');
     }
   });
+
+  // close menu on click
+  $('.nav-item').click(function (e) {
+    $('.navbar-collapse').removeClass('show'); // 'show' is default bootstrap class which shows the nav menu on small devices
+    $('.navbar-toggler').removeClass('change'); // change class was added above on '.nav-button' click
+  });
 });
