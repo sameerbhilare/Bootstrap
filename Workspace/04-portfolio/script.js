@@ -73,7 +73,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1100 && position < 1600) {
+    if (position > 1100 && position < 1700) {
       $('.skills-title').css('opacity', '1'); // when user scrolls up
       $('.skills-title').addClass('sectionTitleAnimation');
     } else {
@@ -122,6 +122,43 @@ $(document).ready(function () {
 
       $('.other-description').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
       $('.other-description').removeClass('fromRight');
+    }
+  });
+
+  // window scroll event - to animate timeline
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    //console.log(position);
+    if (position > 2500 && position < 4000) {
+      $('.timeline-title').css('opacity', '1'); // when user scrolls up
+      $('.timeline-title').addClass('sectionTitleAnimation');
+
+      $('.event-1').css('opacity', '1'); // when user scrolls up
+      $('.event-1').addClass('animate-event-1');
+
+      $('.event-2').css('opacity', '1'); // when user scrolls up
+      $('.event-2').addClass('animate-event-2');
+
+      $('.event-3').css('opacity', '1'); // when user scrolls up
+      $('.event-3').addClass('animate-event-3');
+
+      $('.event-4').css('opacity', '1'); // when user scrolls up
+      $('.event-4').addClass('animate-event-4');
+    } else {
+      $('.timeline-title').css('opacity', '0'); // when user scrolls up
+      $('.timeline-title').removeClass('sectionTitleAnimation');
+
+      $('.event-1').css('opacity', '0'); // when user scrolls up from bottom, we should not show the timeline to have better UX
+      $('.event-1').removeClass('animate-event-1');
+
+      $('.event-2').css('opacity', '0'); // when user scrolls up from bottom, we should not show the timeline to have better UX
+      $('.event-2').removeClass('animate-event-2');
+
+      $('.event-3').css('opacity', '0'); // when user scrolls up from bottom, we should not show the timeline to have better UX
+      $('.event-3').removeClass('animate-event-3');
+
+      $('.event-4').css('opacity', '0'); // when user scrolls up from bottom, we should not show the timeline to have better UX
+      $('.event-4').removeClass('animate-event-4');
     }
   });
 

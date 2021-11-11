@@ -367,3 +367,31 @@ mark {
   left: 0;
   right: -55.8px;
 }
+
+.animate-event-1 {
+  animation-name: sectionTitleAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+.animate-event-2 {
+  animation-name: sectionTitleAnimation;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+.animate-event-3 {
+  animation-name: sectionTitleAnimation;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+.animate-event-4 {
+  animation-name: sectionTitleAnimation;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
