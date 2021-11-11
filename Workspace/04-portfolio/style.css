@@ -377,21 +377,21 @@ mark {
 .animate-event-2 {
   animation-name: sectionTitleAnimation;
   animation-duration: 0.5s;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
   animation-timing-function: ease;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-3 {
   animation-name: sectionTitleAnimation;
   animation-duration: 0.5s;
-  animation-delay: 1.5s;
+  animation-delay: 1.6s;
   animation-timing-function: ease;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-4 {
   animation-name: sectionTitleAnimation;
   animation-duration: 0.5s;
-  animation-delay: 2.5s;
+  animation-delay: 2.4s;
   animation-timing-function: ease;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
