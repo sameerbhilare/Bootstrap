@@ -22,13 +22,13 @@ $(document).ready(function () {
     //console.log(position);
     if (position <= 350) {
       // banner
-      $('.header').css('opacity', '1'); // when user scrolls up
-      $('.header').addClass('fromTopHeader');
+      $('.banner').css('opacity', '1'); // when user scrolls up
+      $('.banner').addClass('fromTopHeader');
       $('.home-social *').addClass('socialMedia');
     } else {
       // banner
-      $('.header').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.header').removeClass('fromTopHeader');
+      $('.banner').css('opacity', '0'); // when user scrolls up from bottom, we should not show the banner to have better UX
+      $('.banner').removeClass('fromTopHeader');
       $('.home-social *').removeClass('socialMedia');
     }
   });
