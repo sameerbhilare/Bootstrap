@@ -408,3 +408,35 @@ mark {
   animation-timing-function: ease;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
+
+/* ============================================================================ */
+/* Work */
+
+/* in addition to bootstrap's 'card' class styles, below styles will be appllied */
+.card {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 8px 20px #ccc;
+  transition: all 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02) perspective(2px);
+}
+
+/* in addition to bootstrap's 'card-img-top' class styles, below styles will be appllied */
+.card-img-top {
+  height: 60%;
+}
+
+.pill {
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #617d98;
+  background: #dae2ec;
+}
