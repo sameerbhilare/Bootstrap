@@ -206,4 +206,17 @@ $(document).ready(function () {
     // mark selected item as active and remove active class from other list-items
     $(this).addClass('active-item').siblings().removeClass('active-item');
   });
+
+  // window scroll event - to animate Work title
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    //console.log(position);
+    if (position > 3450 && position < 4200) {
+      $('.work-title').css('opacity', '1'); // when user scrolls up
+      $('.work-title').addClass('sectionTitleAnimation');
+    } else {
+      $('.work-title').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
+      $('.work-title').removeClass('sectionTitleAnimation');
+    }
+  });
 });
