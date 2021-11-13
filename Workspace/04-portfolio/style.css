@@ -442,3 +442,13 @@ mark {
   background: #dae2ec;
   white-space: nowrap;
 }
+
+.work-list-item {
+  color: #777;
+  cursor: pointer;
+  user-select: none; /* disable user selecting the item */
+}
+
+.active-item {
+  color: #007bff;
+}

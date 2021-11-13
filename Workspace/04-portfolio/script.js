@@ -180,4 +180,30 @@ $(document).ready(function () {
     $('.navbar-collapse').removeClass('show'); // 'show' is default bootstrap class which shows the nav menu on small devices
     $('.navbar-toggler').removeClass('change'); // change class was added above on '.nav-button' click
   });
+
+  // Work filter
+  // filter work items based on selected filter
+  $('.work-list-item').click(function () {
+    // get value of 'data-filter' attribute of work-list-item
+    let value = $(this).attr('data-filter');
+    if (value === 'all') {
+      $('.filter').show(300); // 300 ms
+    } else {
+      // filter out elements which does NOT have given class
+      $('.filter')
+        .not('.' + value)
+        .hide(300);
+
+      // show with matching class names
+      $('.filter')
+        .filter('.' + value)
+        .show();
+    }
+  });
+
+  // Add class 'active-item' to the currently selected list item
+  $('.work-list-item').click(function () {
+    // mark selected item as active and remove active class from other list-items
+    $(this).addClass('active-item').siblings().removeClass('active-item');
+  });
 });

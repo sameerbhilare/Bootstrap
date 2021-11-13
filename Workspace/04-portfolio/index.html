@@ -441,11 +441,21 @@
             <div class="underline"></div>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <!-- works filter -->
+        <ul class="my-4 text-center list-inline text-uppercase font-weight-bold">
+          <!-- data-filter => our custom data attribute to filter images based on given value (used in script.js) -->
+          <li class="list-inline-item work-list-item active-item" data-filter="all">All <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-html">Pure HTML <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-angular">Angular <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-react">React</li>
+        </ul>
 
         <!-- works -->
         <div class="flex-wrap d-flex justify-content-center">
           
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-html">
             <img src="./images/projects/html-omnifood.jpg" alt="Omnifood Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Omnifood App</h5>
@@ -457,7 +467,7 @@
             </div>
           </div>
           
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-html">
             <img src="./images/projects/nature-tours.png" alt="Nature Tours Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Nature Tours</h5>
@@ -469,7 +479,7 @@
             </div>
           </div>
           
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-html">
             <img src="./images/projects/pwa.png" alt="PWAGram Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">PWAGram</h5>
@@ -481,7 +491,7 @@
             </div>
           </div>
 
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-react">
             <img src="./images/projects/nextjs-blog.png" alt="NextJS Blog Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">NextJS Blog</h4>
@@ -493,7 +503,7 @@
             </div>
           </div>
           
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-react">
             <img src="./images/projects/gatsby-recipes.jpeg" alt="Gatsby Recipes Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Gatsby Recipes</h4>
@@ -505,7 +515,7 @@
             </div>
           </div>
 
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-react">
             <img src="./images/projects/gatsby-portfolio.png" alt="Gatsby Portfolio Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Gatsby Portfolio</h4>
@@ -518,7 +528,7 @@
           </div>
           
 
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-angular">
             <img src="./images/projects/ng-recipes.jpeg" alt="Angular Recipes Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Angular Recipes</h4>
@@ -530,7 +540,7 @@
             </div>
           </div>
 
-          <div class="m-4 card filter">
+          <div class="m-4 card filter filter-angular">
             <img src="./images/projects/ng-fitness.jpg" alt="Angular Fitness Tracker Project" class="card-img card-img-top">
             <div class="card-body">
               <h4 class="text-center card-title">Angular Fitness Tracker</h4>
