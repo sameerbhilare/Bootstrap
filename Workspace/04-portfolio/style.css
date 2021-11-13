@@ -452,3 +452,27 @@ mark {
 .active-item {
   color: #007bff;
 }
+
+.workCardAnimation {
+  animation-timing-function: ease;
+  animation-name: workCardAnimation;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+}
+
+@keyframes workCardAnimation {
+  0% {
+    transform: scale(1) perspective(2px);
+    box-shadow: 5px 8px 20px #ccc;
+  }
+
+  50% {
+    transform: scale(1.03) perspective(2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    transform: transcale(1);
+    box-shadow: 5px 8px 20px #ccc;
+  }
+}

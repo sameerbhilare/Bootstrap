@@ -13,7 +13,7 @@ $(document).ready(function () {
   // window scroll event - show border bottom
   $(window).scroll(function () {
     let position = $(this).scrollTop(); // calculates position in px when we scroll down
-    console.log(position);
+    //console.log(position);
     if (position > 450) {
       // add custom-navbar class when scroll position is >= 200
       $('.nav-menu').addClass('custom-navbar');
@@ -217,6 +217,17 @@ $(document).ready(function () {
     } else {
       $('.work-title').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
       $('.work-title').removeClass('sectionTitleAnimation');
+    }
+  });
+
+  // window scroll event - to animate Work cards
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    //console.log(position);
+    if (position > 3450 && position < 4200) {
+      $('.card').addClass('workCardAnimation');
+    } else {
+      $('.card').removeClass('workCardAnimation');
     }
   });
 });
