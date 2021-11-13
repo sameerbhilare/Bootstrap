@@ -422,7 +422,7 @@ mark {
 }
 
 .card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   transform: scale(1.02) perspective(2px);
 }
 
@@ -432,6 +432,7 @@ mark {
 }
 
 .pill {
+  display: inline-block;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
@@ -439,4 +440,5 @@ mark {
   text-transform: uppercase;
   color: #617d98;
   background: #dae2ec;
+  white-space: nowrap;
 }
