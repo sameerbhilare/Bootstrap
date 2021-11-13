@@ -476,3 +476,21 @@ mark {
     box-shadow: 5px 8px 20px #ccc;
   }
 }
+
+/* ============================================================================ */
+/* Contact */
+.form-control {
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: rgba(0, 123, 255, 0.15);
+}
+
+.submit-button {
+  border-radius: 10rem;
+  padding: 10px 50px;
+  background-color: rgba(0, 123, 255);
+}
