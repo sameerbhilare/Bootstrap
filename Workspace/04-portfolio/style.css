@@ -519,3 +519,22 @@ mark {
 .submit-button:active {
   transform: translateY(4px);
 }
+
+/* ============================================================================ */
+/* footer */
+
+.author {
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #007bff;
+}
+.author:hover {
+  transform: rotate(3deg) scale(1.4);
+  text-decoration: none;
+  color: #007bff;
+  background-color: #343a40;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%);
+  z-index: 10;
+}
