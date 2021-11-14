@@ -145,6 +145,7 @@ section {
 .line1,
 .line2,
 .line3 {
+  display: block;
   width: 23px;
   height: 3px;
   margin: 5px;
