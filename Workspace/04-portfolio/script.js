@@ -33,7 +33,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position <= 350) {
+    if (position <= 325) {
       // banner
       $('.banner-section').css('opacity', '1'); // when user scrolls up
       $('.banner-section').addClass('fromTopHeader');
@@ -50,7 +50,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     // console.log(position);
-    if (position > 350 && position < 1300) {
+    if (position > 325 && position < 1300) {
       // about
       $('.about-title').css('opacity', '1'); // when user scrolls up
       $('.about-title').addClass('sectionTitleAnimation');
