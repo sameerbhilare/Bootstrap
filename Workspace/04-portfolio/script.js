@@ -230,4 +230,17 @@ $(document).ready(function () {
       $('.card').removeClass('workCardAnimation');
     }
   });
+
+  // window scroll event - to animate contact title
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    //console.log(position);
+    if (position > 5600) {
+      $('.contact-title').css('opacity', '1'); // when user scrolls up
+      $('.contact-title').addClass('sectionTitleAnimation');
+    } else {
+      $('.contact-title').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
+      $('.contact-title').removeClass('sectionTitleAnimation');
+    }
+  });
 });
