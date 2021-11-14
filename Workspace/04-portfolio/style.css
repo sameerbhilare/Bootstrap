@@ -1,6 +1,7 @@
 html {
   /* commenting scroll-behavior: smooth so that animations have proper effect based on scroll position */
   /* scroll-behavior: smooth; */
+  font-size: 1rem;
 }
 
 body {
@@ -9,6 +10,15 @@ body {
 
 /* ============================================================================ */
 /* Common */
+
+.main {
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 4rem;
+  }
+}
 
 .sectionTitleAnimation {
   animation: sectionTitleAnimation 1s;

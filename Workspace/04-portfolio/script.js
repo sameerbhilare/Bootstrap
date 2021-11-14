@@ -211,7 +211,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 3450 && position < 4200) {
+    if (position > 3450 && position < 4700) {
       $('.work-title').css('opacity', '1'); // when user scrolls up
       $('.work-title').addClass('sectionTitleAnimation');
     } else {
