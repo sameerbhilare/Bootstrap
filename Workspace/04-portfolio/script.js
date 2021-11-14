@@ -235,7 +235,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 5600) {
+    if (position > 5100) {
       $('.contact-title').css('opacity', '1'); // when user scrolls up
       $('.contact-title').addClass('sectionTitleAnimation');
     } else {
