@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  // when document is ready, enable the toggler
+  $('.nav-button').removeAttr('disabled');
+
   // togglng hamburger menu
   $('.nav-button').click(function () {
     $('.nav-button').toggleClass('change'); // add/remove 'change' class on click of nav-button
