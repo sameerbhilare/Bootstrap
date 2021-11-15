@@ -5,10 +5,10 @@ $(document).ready(function () {
   });
 
   // set currently clicked menu item as active
-  $('.navbar-nav a').on('click', function () {
-    $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
-    $(this).addClass('nav-active');
-  });
+  // $('.navbar-nav a').on('click', function () {
+  //   $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
+  //   $(this).addClass('nav-active');
+  // });
 
   // window scroll event - show border bottom
   $(window).scroll(function () {
@@ -24,10 +24,10 @@ $(document).ready(function () {
   });
 
   // set home menu item as active when clicked on logo
-  $('#logo').on('click', function () {
-    $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
-    $('a[href$="#banner"]').addClass('nav-active');
-  });
+  // $('#logo').on('click', function () {
+  //   $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
+  //   $('a[href$="#banner"]').addClass('nav-active');
+  // });
 
   // window scroll event - to animate banner
   $(window).scroll(function () {
@@ -234,7 +234,7 @@ $(document).ready(function () {
   // window scroll event - to animate contact title
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    console.log(position);
+    //console.log(position);
     if (position > 4200) {
       $('.contact-title').css('opacity', '1'); // when user scrolls up
       $('.contact-title').addClass('sectionTitleAnimation');

@@ -136,6 +136,7 @@ section {
   color: #007bff;
 }
 
+.active,
 .nav-active {
   /* color: #007bff; */
   border-bottom: 4px solid #007bff;
