@@ -101,43 +101,15 @@ $(document).ready(function () {
   // window scroll event - to animate frontend skills
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    //console.log(position);
+    console.log(position);
     if (position > 1100 && position < 3500) {
-      $('.frontend-progress').css('opacity', '1'); // when user scrolls up
-      $('.frontend-progress').addClass('fromLeft');
-
-      $('.frontend-description').css('opacity', '1'); // when user scrolls up
-      $('.frontend-description').addClass('fromRight');
-
-      $('.backend-progress').css('opacity', '1'); // when user scrolls up
-      $('.backend-progress').addClass('fromLeft');
-
-      $('.backend-description').css('opacity', '1'); // when user scrolls up
-      $('.backend-description').addClass('fromRight');
-
-      $('.other-progress').css('opacity', '1'); // when user scrolls up
-      $('.other-progress').addClass('fromLeft');
-
-      $('.other-description').css('opacity', '1'); // when user scrolls up
-      $('.other-description').addClass('fromRight');
+      // set width same as parent so that it will transition over given time in 'skill_bar-slider'
+      $('.skill_bar-slider').each(function () {
+        $(this).width($(this).parent().width());
+      });
     } else {
-      $('.frontend-progress').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.frontend-progress').removeClass('fromLeft');
-
-      $('.frontend-description').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.frontend-description').removeClass('fromRight');
-
-      $('.backend-progress').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.backend-progress').removeClass('fromLeft');
-
-      $('.backend-description').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.backend-description').removeClass('fromRight');
-
-      $('.other-progress').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.other-progress').removeClass('fromLeft');
-
-      $('.other-description').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.other-description').removeClass('fromRight');
+      // set width back to 0
+      $('.skill_bar-slider').width(0);
     }
   });
 

@@ -319,8 +319,20 @@ mark {
 }
 
 .skill_bar {
+  position: relative;
   padding-top: 10px;
+  /* border-bottom: 4px solid #007bff; */
+}
+
+.skill_bar-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  /* background-color: #007bff; */
+  width: 0%; /* initial width */
   border-bottom: 4px solid #007bff;
+  transition: width 1.5s ease; /* for animating the width */
 }
 
 /* ============================================================================ */
