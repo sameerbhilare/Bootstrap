@@ -580,6 +580,10 @@ mark {
   transform: translateY(4px);
 }
 
+.submit-button:disabled {
+  cursor: not-allowed;
+}
+
 /* ============================================================================ */
 /* footer */
 

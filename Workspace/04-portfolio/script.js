@@ -246,4 +246,57 @@ $(document).ready(function () {
       $('.contact-title').removeClass('sectionTitleAnimation');
     }
   });
+
+  // Contact Form submission
+  $('.contact-form').submit(function (event) {
+    // to avoid page reload
+    event.preventDefault();
+
+    // disable the button to multiple click send
+    $('.submit-button').attr('disabled', true);
+
+    // clear alert area
+    $('.alert-area').html('');
+
+    // send form data
+    $.ajax({
+      url: 'https://formspree.io/f/xeqvykpn',
+      type: 'post',
+      dataType: 'json',
+      data: $('.contact-form').serialize(),
+      success: function (data) {
+        // reset the form
+        $('.contact-form')[0].reset();
+
+        // enable the button again
+        $('.submit-button').removeAttr('disabled');
+
+        // show alert
+        $('.alert-area').html(
+          `
+          <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+          Thank you for your message! I will get back to you within a day.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>`
+        );
+        //alert('Thank you for your message! I will get back to you within a day.');
+      },
+      error: function (error) {
+        // enable the button again
+        $('.submit-button').removeAttr('disabled');
+
+        $('.alert-area').html(
+          `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert" id="failure-alert">
+            Something went wrong! Sorry for the inconvinience.<br>Your message was not sent but you can drop me an email at - <strong>bhilare.sameer@gmail.com</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>`
+        );
+      },
+    });
+  });
 });
