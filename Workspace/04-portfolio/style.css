@@ -332,7 +332,7 @@ mark {
   /* background-color: #007bff; */
   width: 0%; /* initial width */
   border-bottom: 4px solid #007bff;
-  transition: width 1.5s ease; /* for animating the width */
+  transition: width 1.2s ease; /* for animating the width */
 }
 
 /* ============================================================================ */

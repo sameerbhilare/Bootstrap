@@ -98,7 +98,9 @@ $(document).ready(function () {
     }
   });
 
-  // window scroll event - to animate frontend skills
+  /*
+  // **** FOR ALL SKILLS
+  // window scroll event - to animate skills
   $(window).scroll(function () {
     let position = $(this).scrollTop();
     console.log(position);
@@ -110,6 +112,53 @@ $(document).ready(function () {
     } else {
       // set width back to 0
       $('.skill_bar-slider').width(0);
+    }
+  });
+  */
+
+  // **** FOR SEPERATE SKILLS
+  // window scroll event - to animate frontend skills
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    console.log(position);
+    if (position > 1100 && position < 2400) {
+      // set width same as parent so that it will transition over given time in 'skill_bar-slider'
+      $('.frontend-progress * .skill_bar-slider').each(function () {
+        $(this).width($(this).parent().width());
+      });
+    } else {
+      // set width back to 0
+      $('.frontend-progress * .skill_bar-slider').width(0);
+    }
+  });
+
+  // window scroll event - to animate backend skills
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    console.log(position);
+    if (position > 1500 && position < 2800) {
+      // set width same as parent so that it will transition over given time in 'skill_bar-slider'
+      $('.backend-progress * .skill_bar-slider').each(function () {
+        $(this).width($(this).parent().width());
+      });
+    } else {
+      // set width back to 0
+      $('.backend-progress * .skill_bar-slider').width(0);
+    }
+  });
+
+  // window scroll event - to animate other skills
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    console.log(position);
+    if (position > 1800 && position < 3500) {
+      // set width same as parent so that it will transition over given time in 'skill_bar-slider'
+      $('.other-progress * .skill_bar-slider').each(function () {
+        $(this).width($(this).parent().width());
+      });
+    } else {
+      // set width back to 0
+      $('.other-progress * .skill_bar-slider').width(0);
     }
   });
 
