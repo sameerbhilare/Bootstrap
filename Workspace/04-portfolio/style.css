@@ -182,8 +182,9 @@ section {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* START => circle with a cutout image and shadow as well */
 /* specially added to show shadow for exact round and cutout (polygon) shape */
-.parent-wrapper {
+/* .parent-wrapper {
   filter: drop-shadow(0 15px 30px rgba(0, 123, 255, 0.7));
 }
 
@@ -193,6 +194,30 @@ section {
   overflow: hidden;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
   position: relative;
+} */
+/* END => circle with a cutout image and shadow as well */
+
+.parent-wrapper {
+  filter: drop-shadow(0 15px 30px rgba(0, 123, 255, 0.7));
+}
+
+.img-wrapper {
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  /* Refer - https://9elements.github.io/fancy-border-radius */
+  /* RC 1 */
+  border-radius: 24% 76% 50% 50% / 26% 33% 67% 74%;
+
+  /* RC 2 */
+  /* border-radius: 30% 70% 34% 66% / 26% 25% 75% 74%; */
+
+  /* border-radius: 72% 28% 29% 71% / 52% 46% 54% 48%; */
+  /* border-radius: 39% 61% 50% 50% / 30% 43% 57% 70%; */
+  /* border-radius: 50% 50% 50% 50% / 65% 68% 32% 35%; */
+  /* border-radius: 23% 77% 63% 37% / 32% 33% 67% 68%; */
 }
 
 #img-profile {
