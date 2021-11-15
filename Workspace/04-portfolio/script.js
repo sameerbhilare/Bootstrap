@@ -234,8 +234,8 @@ $(document).ready(function () {
   // window scroll event - to animate contact title
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    //console.log(position);
-    if (position > 5100) {
+    console.log(position);
+    if (position > 4200) {
       $('.contact-title').css('opacity', '1'); // when user scrolls up
       $('.contact-title').addClass('sectionTitleAnimation');
     } else {
