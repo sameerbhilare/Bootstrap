@@ -220,6 +220,11 @@ body {
 
 /* ============================================================================ */
 /* Banner */
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
 
 /* change based on scroll */
 .custom-navbar {
@@ -381,6 +386,12 @@ section {
 .home-social {
   margin-top: 4rem;
 }
+@media (max-width: 576px) {
+  .home-social {
+    margin-top: 3rem;
+  }
+}
+
 .home-social * {
   font-size: 1.5rem;
   /* same as .fromTopHeader class because it is required when page loaded for first time as there is no scrolling yet */
