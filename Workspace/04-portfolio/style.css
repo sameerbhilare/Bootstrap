@@ -169,7 +169,19 @@ body {
 }
 
 .sectionTitleAnimation {
+  -webkit-animation: sectionTitleAnimation 1s;
   animation: sectionTitleAnimation 1s;
+}
+
+@-webkit-keyframes sectionTitleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes sectionTitleAnimation {
@@ -185,16 +197,40 @@ body {
 
 /* animation on scroll when we reach the mission part of the mission section */
 .fromLeft {
+  -webkit-animation: fromLeft 1.5s ease;
   animation: fromLeft 1.5s ease;
 }
 
 .fromRight {
+  -webkit-animation: fromRight 1.5s ease;
   animation: fromRight 1.5s ease;
+}
+
+@-webkit-keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fromLeft {
   0% {
     transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    transform: translateX(30px);
     opacity: 0;
   }
   100% {
@@ -254,7 +290,19 @@ section {
 
 /* animation on scroll when we reach the mission part of the mission section */
 .fromTopHeader {
+  -webkit-animation: fromTopHeader 1.5s ease;
   animation: fromTopHeader 1.5s ease;
+}
+
+@-webkit-keyframes fromTopHeader {
+  0% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes fromTopHeader {
@@ -354,6 +402,7 @@ section {
 /* END => circle with a cutout image and shadow as well */
 
 .parent-wrapper {
+  -webkit-filter: drop-shadow(0 15px 30px var(--current-shade-2));
   filter: drop-shadow(0 15px 30px var(--current-shade-2));
 }
 
@@ -395,18 +444,37 @@ section {
 .home-social * {
   font-size: 1.5rem;
   /* same as .fromTopHeader class because it is required when page loaded for first time as there is no scrolling yet */
+  -webkit-animation-name: socialMedia;
   animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 
 /* animation on scroll when we reach the mission part of the mission section */
 .socialMedia {
+  -webkit-animation-name: socialMedia;
   animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+
+@-webkit-keyframes socialMedia {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes socialMedia {
@@ -459,9 +527,13 @@ mark {
 
 /* abount-description animation for small devices */
 .aboutDescAnimationSM {
+  -webkit-animation-name: socialMedia;
   animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 /* ============================================================================ */
@@ -576,7 +648,6 @@ mark {
 }
 
 .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 3px var(--current-primary);
   box-shadow: 0 0 0 3px var(--current-primary);
   left: -55.8px;
   background: var(--shadow-light-3);
@@ -614,30 +685,49 @@ mark {
 }
 
 .animate-event-1 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-2 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-3 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-4 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 2.4s;
   animation-delay: 2.4s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 
@@ -678,6 +768,9 @@ mark {
 .work-list-item {
   color: var(--shadow-dark-3);
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; /* disable user selecting the item */
 }
 
@@ -686,10 +779,31 @@ mark {
 }
 
 .workCardAnimation {
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-name: workCardAnimation;
   animation-name: workCardAnimation;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+}
+
+@-webkit-keyframes workCardAnimation {
+  0% {
+    transform: scale(1) perspective(2px);
+    box-shadow: 5px 8px 20px var(--shadow-light-1);
+  }
+
+  50% {
+    transform: scale(1.03) perspective(2px);
+    box-shadow: 0 5px 15px var(--shadow-dark-4);
+  }
+
+  100% {
+    transform: transcale(1);
+    box-shadow: 5px 8px 20px var(--shadow-light-1);
+  }
 }
 
 @keyframes workCardAnimation {
@@ -738,6 +852,7 @@ mark {
   width: 100%;
   height: 100%;
   opacity: 0.1;
+  -webkit-clip-path: circle(0 at center);
   clip-path: circle(0 at center);
   background-color: var(--shadow-light-3);
   transition: 0.5s ease-out;
@@ -745,6 +860,7 @@ mark {
 
 /* ripple effect on hover using clip-path */
 .submit-button:hover:before {
+  -webkit-clip-path: circle(100px at center);
   clip-path: circle(100px at center);
 }
 
