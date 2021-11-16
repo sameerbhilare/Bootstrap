@@ -23,6 +23,7 @@ body {
   /* --text-color: #212529; this is default */
 
   /* theme wise */
+  /* blue theme */
   --theme-blue-primary: #007bff;
   --theme-blue-shade-1: rgba(0, 123, 255, 1.25);
   --theme-blue-shade-2: rgba(0, 123, 255, 0.7);
@@ -32,6 +33,48 @@ body {
   --theme-blue-shade-6: rgba(0, 123, 255, 0.1);
   --theme-blue-shade-7: rgba(0, 123, 255, 0);
 
+  /* red theme */
+  --theme-red-primary: #d63031;
+  --theme-red-shade-1: rgba(214, 48, 49, 1.25);
+  --theme-red-shade-2: rgba(214, 48, 49, 0.7);
+  --theme-red-shade-3: rgba(214, 48, 49, 0.4);
+  --theme-red-shade-4: rgba(214, 48, 49, 0.3);
+  --theme-red-shade-5: rgba(214, 48, 49, 0.15);
+  --theme-red-shade-6: rgba(214, 48, 49, 0.1);
+  --theme-red-shade-7: rgba(214, 48, 49, 0);
+
+  /* violet theme */
+  --theme-violet-primary: #3b3b98;
+  --theme-violet-shade-1: rgba(59, 59, 152, 1.25);
+  --theme-violet-shade-2: rgba(59, 59, 152, 0.7);
+  --theme-violet-shade-3: rgba(59, 59, 152, 0.4);
+  --theme-violet-shade-4: rgba(59, 59, 152, 0.3);
+  --theme-violet-shade-5: rgba(59, 59, 152, 0.15);
+  --theme-violet-shade-6: rgba(59, 59, 152, 0.1);
+  --theme-violet-shade-7: rgba(59, 59, 152, 0);
+
+  /* green theme */
+  --theme-green-primary: #007f5f;
+  --theme-green-shade-1: rgba(0, 127, 95, 1.25);
+  --theme-green-shade-2: rgba(0, 127, 95, 0.7);
+  --theme-green-shade-3: rgba(0, 127, 95, 0.4);
+  --theme-green-shade-4: rgba(0, 127, 95, 0.3);
+  --theme-green-shade-5: rgba(0, 127, 95, 0.15);
+  --theme-green-shade-6: rgba(0, 127, 95, 0.1);
+  --theme-green-shade-7: rgba(0, 127, 95, 0);
+
+  /* purple theme */
+  --theme-purple-primary: #802b67;
+  --theme-purple-shade-1: rgba(128, 43, 103, 1.25);
+  --theme-purple-shade-2: rgba(128, 43, 103, 0.7);
+  --theme-purple-shade-3: rgba(128, 43, 103, 0.4);
+  --theme-purple-shade-4: rgba(128, 43, 103, 0.3);
+  --theme-purple-shade-5: rgba(128, 43, 103, 0.15);
+  --theme-purple-shade-6: rgba(128, 43, 103, 0.1);
+  --theme-purple-shade-7: rgba(128, 43, 103, 0);
+}
+
+.theme-blue {
   /* current theme */
   --current-primary: var(--theme-blue-primary);
   --current-shade-1: var(--theme-blue-shade-1);
@@ -42,8 +85,79 @@ body {
   --current-shade-6: var(--theme-blue-shade-6);
   --current-shade-7: var(--theme-blue-shade-7);
 }
+
+.theme-red {
+  /* current theme */
+  --current-primary: var(--theme-red-primary);
+  --current-shade-1: var(--theme-red-shade-1);
+  --current-shade-2: var(--theme-red-shade-2);
+  --current-shade-3: var(--theme-red-shade-3);
+  --current-shade-4: var(--theme-red-shade-4);
+  --current-shade-5: var(--theme-red-shade-5);
+  --current-shade-6: var(--theme-red-shade-6);
+  --current-shade-7: var(--theme-red-shade-7);
+}
+
+.theme-violet {
+  /* current theme */
+  --current-primary: var(--theme-violet-primary);
+  --current-shade-1: var(--theme-violet-shade-1);
+  --current-shade-2: var(--theme-violet-shade-2);
+  --current-shade-3: var(--theme-violet-shade-3);
+  --current-shade-4: var(--theme-violet-shade-4);
+  --current-shade-5: var(--theme-violet-shade-5);
+  --current-shade-6: var(--theme-violet-shade-6);
+  --current-shade-7: var(--theme-violet-shade-7);
+}
+
+.theme-green {
+  /* current theme */
+  --current-primary: var(--theme-green-primary);
+  --current-shade-1: var(--theme-green-shade-1);
+  --current-shade-2: var(--theme-green-shade-2);
+  --current-shade-3: var(--theme-green-shade-3);
+  --current-shade-4: var(--theme-green-shade-4);
+  --current-shade-5: var(--theme-green-shade-5);
+  --current-shade-6: var(--theme-green-shade-6);
+  --current-shade-7: var(--theme-green-shade-7);
+}
+
+.theme-purple {
+  /* current theme */
+  --current-primary: var(--theme-purple-primary);
+  --current-shade-1: var(--theme-purple-shade-1);
+  --current-shade-2: var(--theme-purple-shade-2);
+  --current-shade-3: var(--theme-purple-shade-3);
+  --current-shade-4: var(--theme-purple-shade-4);
+  --current-shade-5: var(--theme-purple-shade-5);
+  --current-shade-6: var(--theme-purple-shade-6);
+  --current-shade-7: var(--theme-purple-shade-7);
+}
+
 /* ============================================================================ */
 /* Common */
+.theme-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.dropdown-menu.show {
+  display: inline;
+}
+@media (max-width: 991px) {
+  .dropdown-menu.show {
+    display: inline-flex;
+  }
+}
+.dropdown-item {
+  cursor: pointer;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--shadow-light-2);
+}
 
 .main {
   margin-top: 0;
@@ -592,7 +706,7 @@ mark {
 .submit-button {
   border-radius: 10rem;
   padding: 10px 50px;
-  background-color: var(--current-primary);
+  background-color: var(--current-shade-1);
   position: relative;
   transform: translateY(0px);
   transition: all 0.3s;

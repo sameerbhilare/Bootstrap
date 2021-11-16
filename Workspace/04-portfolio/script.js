@@ -7,6 +7,18 @@ $(document).ready(function () {
     $('.nav-button').toggleClass('change'); // add/remove 'change' class on click of nav-button
   });
 
+  $('.theme-link').click(function () {
+    // remove all classes starting with 'theme-'
+    $('body').removeClass(function (index, className) {
+      return (className.match(/(^|\s)theme-\S+/g) || []).join(' ');
+    });
+
+    // get 'id' od the current link
+    var themeId = $(this).attr('id');
+    // add class. Ensure that link 'id' and name of the theme class should be same ***
+    $('body').addClass(themeId);
+  });
+
   // set currently clicked menu item as active
   // $('.navbar-nav a').on('click', function () {
   //   $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
