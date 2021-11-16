@@ -108,6 +108,7 @@ $(document).ready(function () {
     } else {
       minPos = 350;
       maxPos = 1300;
+      aboutDescriptionAnimation = 'fromRight';
     }
     let position = $(this).scrollTop();
     //console.log(position);
