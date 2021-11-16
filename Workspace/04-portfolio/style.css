@@ -457,6 +457,13 @@ mark {
   border-bottom: 5px solid var(--current-primary);
 }
 
+/* abount-description animation for small devices */
+.aboutDescAnimationSM {
+  animation-name: socialMedia;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
 /* ============================================================================ */
 /* Skills */
 
